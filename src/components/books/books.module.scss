@@ -1,0 +1,59 @@
+.books_bricks {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 21.5px;
+}
+.books_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.books_emptySearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #a7a7a7;
+    &_none {
+      display: none;
+    }
+  }
+  @media (max-width: 540px) {
+    &_text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .books_bricks {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    gap: 24px 21.5px;
+  }
+}
+@media (max-width: 1240px) {
+  .books_bricks {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1440px) {
+  .books_list {
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .books_bricks {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  height: 56px;
+  border-top: 1px solid #bfc4c9;
+  align-items: center;
+
+  &_rights {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #363636;
+  }
+  &_social {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    &_social {
+      margin-left: 0px;
+    }
+  }
+}

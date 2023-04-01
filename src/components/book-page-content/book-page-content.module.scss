@@ -1,0 +1,253 @@
+.book {
+  &_wrapper {
+    &_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      @media (max-width: 957px) {
+        grid-template-columns: 136px 472px;
+      }
+      &_images {
+        width: 445px;
+        &_img {
+          height: 593px;
+          width: 445px;
+          border-radius: 10px;
+          border: 1px solid #a7a7a7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &_bookImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+          &_cat {
+            width: 35.75px;
+            height: 38.75px;
+          }
+        }
+      }
+      @media (max-width: 1239px) {
+        &_images {
+          width: 335px;
+          &_img {
+            height: 468px;
+            width: 335px;
+          }
+        }
+      }
+      &_subinfo {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: 0.1px;
+          color: #363636;
+        }
+        &_author {
+          margin-top: 24px;
+        }
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.1px;
+          color: #a7a7a7;
+        }
+        &_booking {
+          width: 350px;
+          height: 52px;
+          background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+          border-radius: 30px;
+          border: none;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+          color: #ffffff;
+          cursor: pointer;
+          margin-top: 32px;
+          &_booked {
+            width: 350px;
+            height: 52px;
+            border-radius: 30px;
+            background: #f9f9fa;
+            border: 1px solid #bfc4c9;
+            color: #a7a7a7;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            margin-top: 32px;
+          }
+          &_person {
+            width: 350px;
+            height: 52px;
+            border-radius: 30px;
+            background: transparent;
+            color: #363636;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            margin-top: 32px;
+          }
+        }
+        &_about {
+          margin-top: 62px;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          h5 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1px;
+            color: #363636;
+            margin: 0;
+          }
+          p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: #363636;
+          }
+        }
+      }
+      @media (max-width: 1239px) {
+        &_subinfo {
+          h1 {
+            font-size: 24px;
+            line-height: 30px;
+            &_about {
+              h5 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: 957px) {
+        &_subinfo {
+          span {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+          }
+          &_booking {
+            width: 306px;
+            &_booked {
+              width: 306px;
+            }
+            &_person {
+              width: 306px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 667px) {
+      &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_img {
+          width: 188px;
+          height: 260px;
+        }
+        &_subinfo {
+          align-items: center;
+          h1 {
+            padding-left: 16px;
+          }
+          &_author {
+            margin-right: auto;
+            padding-left: 16px;
+          }
+          &_about {
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+          &_booking {
+            width: 288px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 18px;
+            &_booked {
+              width: 288px;
+              height: 40px;
+              font-size: 12px;
+              line-height: 18px;
+            }
+            &_person {
+              width: 288px;
+              height: 40px;
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 957px) {
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      &_content {
+        &_img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 198px;
+          width: 136px;
+          border-radius: 10px;
+          border: 1px solid #a7a7a7;
+        }
+
+        &_subinfo {
+          &_about {
+            margin-top: 48px;
+          }
+        }
+        @media (max-width: 667px) {
+          &_img {
+            width: 188px;
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+}

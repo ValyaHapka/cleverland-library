@@ -1,0 +1,31 @@
+.container {
+  &_myswiper {
+    width: 136px;
+    &_slide {
+      width: 136px;
+      margin-bottom: 30px;
+      &_img {
+        border: 1px solid #a7a7a7;
+        border-radius: 3px;
+        height: 198px;
+        width: 136px;
+      }
+    }
+  }
+}
+@media (max-width: 667px) {
+  .container {
+    &_myswiper {
+      width: 188px;
+      &_slide {
+        width: 188px;
+        &_img {
+          border: 1px solid #a7a7a7;
+          border-radius: 3px;
+          height: 260px;
+          width: 188px;
+        }
+      }
+    }
+  }
+}

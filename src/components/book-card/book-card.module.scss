@@ -1,0 +1,182 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  height: 470px;
+  background: transparent;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+  &_rank {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    padding-right: 36px;
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #a7a7a7;
+      padding-right: 20px;
+    }
+  }
+  &_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 242px;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    margin-top: 8px;
+    &_bookImg {
+      width: 174px;
+      height: 242px;
+      border: 1px solid #a7a7a7;
+      border-radius: 10px;
+    }
+    &_cat {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  h2 {
+    width: 174px;
+    max-height: 54px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #363636;
+    text-align: start;
+    margin-bottom: 8px;
+    span {
+      width: 174px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #363636;
+    }
+  }
+  &_info {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title_highlighted {
+      background: transparent;
+      color: rgb(255, 82, 83);
+    }
+    span {
+      width: 174px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      color: #727272;
+    }
+  }
+  &_booking {
+    margin-top: auto;
+    margin-bottom: 16px;
+    height: 40px;
+    width: 166px;
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    &_booked {
+      margin-top: auto;
+      margin-bottom: 16px;
+      height: 40px;
+      width: 166px;
+      border-radius: 20px;
+      background: #f9f9fa;
+      border: 1px solid #bfc4c9;
+      color: #a7a7a7;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+    &_person {
+      margin-top: auto;
+      margin-bottom: 16px;
+      height: 40px;
+      width: 166px;
+      border-radius: 20px;
+      background: transparent;
+      color: #363636;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .card {
+    width: 288px;
+    height: 470px;
+    align-items: flex-start;
+    &_rank {
+      margin-left: 16px;
+    }
+    &_img {
+      margin-left: 57px;
+    }
+    &_info {
+      margin-top: 16px;
+      margin-left: 16px;
+      width: 256px;
+      h2 {
+        width: auto;
+        span {
+          width: auto;
+        }
+      }
+    }
+    &_booking {
+      width: 256px;
+      margin-left: 16px;
+      &_booked {
+        width: 256px;
+        margin-left: 16px;
+      }
+      &_person {
+        width: 256px;
+        margin-left: 16px;
+      }
+    }
+  }
+}

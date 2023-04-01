@@ -1,0 +1,196 @@
+.card {
+  padding: 24px 16px;
+  display: flex;
+  background: transparent;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+  &_img {
+    width: 120px;
+    height: 170px;
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_bookImg {
+      width: 120px;
+      height: 170px;
+      border: 1px solid #a7a7a7;
+      border-radius: 3px;
+    }
+    @media (max-width: 767px) {
+      &_cat {
+        width: 22px;
+        height: 22px;
+      }
+      &_bookImg {
+        width: 70px;
+        height: 100px;
+        border: 1px solid #a7a7a7;
+        border-radius: 3px;
+      }
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    &_info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h2 {
+        width: 649px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        color: #363636;
+        span {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 32px;
+          color: #363636;
+        }
+      }
+      span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #727272;
+      }
+      @media (max-width: 1439px) {
+        h2 {
+          width: 464px;
+        }
+      }
+      @media (max-width: 767px) {
+        h2 {
+          width: 188px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          span {
+            width: 188px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    &_buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      &_rank {
+        display: flex;
+        gap: 10px;
+      }
+      &_booking {
+        height: 40px;
+        width: 166px;
+        background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        &_booked {
+          height: 40px;
+          width: 166px;
+          border-radius: 20px;
+          background: #f9f9fa;
+          border: 1px solid #bfc4c9;
+          color: #a7a7a7;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+        }
+        &_person {
+          height: 40px;
+          width: 166px;
+          border-radius: 20px;
+          background: transparent;
+          color: #363636;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1439px) {
+  .card {
+    width: 640px;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    padding: 16px;
+    width: 288px;
+    &_img {
+      width: 70px;
+      height: 100px;
+    }
+    &_content {
+      &_info {
+        gap: 3px;
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      &_buttons {
+        margin-top: 3px;
+        display: flex;
+        flex-direction: column;
+        &_rank {
+          gap: 7.33px;
+          margin-right: 100px;
+          img {
+            width: 13.33px;
+            height: 12.67px;
+          }
+          span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+        &_booking {
+          margin-top: 16px;
+          &_booked {
+            margin-top: 16px;
+          }
+          &_person {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

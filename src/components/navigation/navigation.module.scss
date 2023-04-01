@@ -1,0 +1,184 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  &_filters {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    &_search {
+      display: flex;
+      align-items: center;
+      &_button {
+        display: none;
+        &_hide {
+          display: none;
+        }
+      }
+      &_inp {
+        padding: 12px 40px;
+        width: 350px;
+        height: 38px;
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+          0px 1px 5px rgba(191, 196, 201, 0.24);
+        border-radius: 599px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        &_active {
+          padding: 12px 40px;
+          width: 350px;
+          height: 38px;
+          box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+            0px 1px 5px rgba(191, 196, 201, 0.24);
+          border-radius: 599px;
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          caret-color: #f83600;
+        }
+      }
+      &_close {
+        display: none;
+        &_active {
+          cursor: pointer;
+          display: block;
+          position: absolute;
+          top: 8px;
+          right: 175px;
+          opacity: 0.3;
+          transition: 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      &_icon {
+        position: absolute;
+        top: 10px;
+        left: 16px;
+      }
+      @media (max-width: 1240px) {
+        &_inp {
+          width: 274px;
+          &_active {
+            width: 274px;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      &_search {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        &_close {
+          &_active {
+            right: 30px;
+          }
+        }
+        &_button {
+          cursor: pointer;
+          display: block;
+          width: 32px;
+          height: 32px;
+          background: #ffffff;
+          border: none;
+          box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+            0px 1px 5px rgba(191, 196, 201, 0.24);
+          border-radius: 599px;
+        }
+        &_active {
+          width: 288px;
+        }
+        &_inp {
+          display: none;
+          padding: 0px;
+          &:focus {
+            width: 288px;
+            padding: 12px 15px;
+          }
+          &_active {
+            display: block;
+            padding: 12px 15px;
+          }
+        }
+        &_icon {
+          left: 8px;
+        }
+      }
+    }
+    &_sort {
+      width: 150px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 16px;
+      gap: 8px;
+      background: #ffffff;
+      box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+        0px 1px 5px rgba(191, 196, 201, 0.24);
+      border-radius: 599px;
+      h6 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #a7a7a7;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+    @media (max-width: 767px) {
+      &_sort {
+        width: 32px;
+        height: 32px;
+        padding: 0px;
+        h6 {
+          display: none;
+        }
+      }
+    }
+  }
+  &_view {
+    display: flex;
+    gap: 16px;
+    &_button {
+      filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18))
+        drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+      border-radius: 100px;
+      border-color: transparent;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
+      img {
+        color: #a7a7a7;
+      }
+      &_active {
+        border-radius: 100px;
+        border-color: transparent;
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+        img {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.reject {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #feebea;
+  border: 1.5px solid #f42c4f;
+  border-radius: 5px;
+  padding: 24px 32px;
+  &_logoNtext {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    img {
+      height: 32px;
+      width: 32px;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: #363636;
+    }
+  }
+  &_close {
+    margin-left: auto;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  @media (max-width: 900px) {
+    &_logoNtext {
+      img {
+        height: 24px;
+        width: 24px;
+      }
+      h5 {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    &_close {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
